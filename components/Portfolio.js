@@ -18,7 +18,7 @@ const fallbackProjects = [
     description: 'Full business website for a North Georgia tree care and landscaping company. Services, gallery, testimonials, and lead generation.',
     category: 'business',
     tags: ['Next.js', 'Small Business', 'SEO'],
-    liveUrl: 'https://masters-tree-service.vercel.app/',
+    liveUrl: 'https://masters-tree-service.vercel.app',
     featured: true,
   },
   {
@@ -27,7 +27,7 @@ const fallbackProjects = [
     description: 'Life insurance and mortgage protection website for a Missouri-based independent broker. Eligibility funnel, educational content, and agent recruitment.',
     category: 'business',
     tags: ['Next.js', 'Finance', 'Lead Gen'],
-    liveUrl: 'https://www.oakharborfinance.com/',
+    liveUrl: 'https://oakharborfinance.com',
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ const fallbackProjects = [
     description: 'Multi-step lead generation app that matches homeowners with top local roofing contractors. Smart form logic and instant matching.',
     category: 'webapp',
     tags: ['Next.js', 'Lead Gen', 'Multi-Step Form'],
-    liveUrl: 'https://roofpromatch.vercel.app/',
+    liveUrl: 'https://roofpromatch.vercel.app',
     featured: true,
   },
   {
@@ -45,7 +45,7 @@ const fallbackProjects = [
     description: 'Lead generation platform connecting homeowners with verified solar installers. Qualification funnel with intelligent branching.',
     category: 'webapp',
     tags: ['Next.js', 'Lead Gen', 'Solar'],
-    liveUrl: 'https://solarpromatch.vercel.app/',
+    liveUrl: 'https://solarpromatch.vercel.app',
     featured: true,
   },
   {
@@ -54,7 +54,7 @@ const fallbackProjects = [
     description: 'Mortgage protection and wealth planning site with a clean eligibility screening funnel and educational resources.',
     category: 'business',
     tags: ['Next.js', 'Finance', 'Insurance'],
-    liveUrl: 'https://arete-wealth-protection.vercel.app/',
+    liveUrl: 'https://arete-wealth-protection.vercel.app',
     featured: true,
   },
   {
@@ -68,11 +68,11 @@ const fallbackProjects = [
   },
   {
     _id: '7',
-    title: 'Life Insurance Guide',
-    description: 'Comprehensive educational landing page breaking down life insurance options, designed to build trust and drive conversions.',
-    category: 'landing',
-    tags: ['Next.js', 'Content', 'Insurance'],
-    liveUrl: 'https://www.oakharborfinance.com/life-insurance-guide',
+    title: 'Ruff Lyfe Pet Services',
+    description: 'Mobile-friendly pet services platform built as a progressive web app. Customers can install it directly to their device for convenient, app-like access.',
+    category: 'webapp',
+    tags: ['Next.js', 'PWA', 'Small Business'],
+    liveUrl: 'https://ruff-lyfe.vercel.app',
     featured: true,
   },
 ];

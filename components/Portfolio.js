@@ -94,9 +94,9 @@ const tagColors = {
   default: 'bg-white/5 text-gray-400 border-white/10',
 };
 
-export default function Portfolio({ projects }) {
+export default function Portfolio() {
   const [filter, setFilter] = useState('all');
-  const items = projects?.length ? projects : fallbackProjects;
+  const items = fallbackProjects;
   const filtered = filter === 'all' ? items : items.filter((p) => p.category === filter);
 
   return (

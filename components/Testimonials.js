@@ -4,27 +4,26 @@ import { motion } from 'framer-motion';
 import SectionHeading from './ui/SectionHeading';
 import Reveal from './ui/Reveal';
 
-// Placeholder testimonials — replaced by Sanity CMS
-const fallbackTestimonials = [
+const testimonials = [
   {
     _id: '1',
     clientName: 'Marcus T.',
     businessName: "The Master's Tree Service LLC",
-    quote: "Russ built our entire website in two days. Two days! It looks incredible, loads fast, and we've already gotten calls from people who found us on Google. The CMS dashboard is a game-changer — I can update our services and photos myself without bugging anyone.",
+    quote: "Powers Creative built our entire website in two days. Two days! It looks incredible, loads fast, and we've already gotten calls from people who found us on Google. The CMS dashboard is a game-changer — I can update our services and photos myself without bugging anyone.",
     rating: 5,
   },
   {
     _id: '2',
     clientName: 'David L.',
     businessName: 'Oak Harbor Finance',
-    quote: "I needed a professional site for my insurance business that would build trust with potential clients. Russ delivered something that looks like a Fortune 500 company built it. The eligibility funnel he created converts incredibly well. Best investment I've made in my business.",
+    quote: "I needed a professional site for my insurance business that would build trust with potential clients. Powers Creative delivered something that looks like a Fortune 500 company built it. The eligibility funnel he created converts incredibly well. Best investment I've made in my business.",
     rating: 5,
   },
   {
     _id: '3',
     clientName: 'Sarah K.',
     businessName: 'RoofProMatch',
-    quote: "We needed a lead generation platform built fast and built right. Russ understood exactly what we needed and the multi-step form he created is smooth, professional, and converts like crazy. He's our go-to developer now.",
+    quote: "We needed a lead generation platform built fast and built right. Powers Creative understood exactly what we needed and the multi-step form they created is smooth, professional, and converts like crazy. They're our go-to developer now.",
     rating: 5,
   },
 ];
@@ -46,8 +45,8 @@ function StarRating({ rating }) {
   );
 }
 
-export default function Testimonials({ testimonials }) {
-  const items = testimonials?.length ? testimonials : fallbackTestimonials;
+export default function Testimonials() {
+  const items = testimonials;
 
   return (
     <section id="testimonials" className="section-padding relative">

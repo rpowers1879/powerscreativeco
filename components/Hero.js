@@ -75,8 +75,8 @@ export default function Hero() {
         >
           Custom websites that represent your brand and style.
           <br className="hidden sm:block" />
-          <span className="text-white font-semibold">World-class customer service</span> with a
-          CMS dashboard so you control everything.
+          <span className="text-white font-semibold">You own everything</span> — code, hosting,
+          and full control of your website.
         </motion.p>
 
         {/* CTA buttons */}
@@ -111,7 +111,7 @@ export default function Hero() {
             { icon: '⚡', text: '48-Hour Delivery' },
             { icon: '🏗️', text: 'Next.js & React' },
             { icon: '📊', text: '90+ PageSpeed' },
-            { icon: '🎛️', text: 'CMS Dashboard Included' },
+            { icon: '🔑', text: 'You Own Everything' },
           ].map((item) => (
             <span key={item.text} className="flex items-center gap-2">
               <span>{item.icon}</span>

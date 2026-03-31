@@ -24,7 +24,7 @@ export const metadata = {
     template: '%s | Powers Creative Co.',
   },
   description:
-    'Custom websites that help business owners represent their brand and style. World-class customer service with Next.js, Tailwind CSS, and a CMS dashboard so you control your content.',
+    'Custom websites that help business owners represent their brand and style. World-class customer service with Next.js and Tailwind CSS. You own everything — code, hosting, and full control.',
   keywords: [
     'web developer',
     'freelance web developer',
@@ -36,7 +36,7 @@ export const metadata = {
     'React developer',
     'Tailwind CSS',
     'SEO optimized websites',
-    'CMS websites',
+    'custom websites',
   ],
   authors: [{ name: 'Powers Creative Co.' }],
   creator: 'Powers Creative Co.',
@@ -45,7 +45,7 @@ export const metadata = {
     locale: 'en_US',
     title: 'Powers Creative Co. — Custom Websites for Your Brand',
     description:
-      'Custom websites that help business owners represent their brand with world-class customer service. Modern tech stack with CMS dashboard included.',
+      'Custom websites that help business owners represent their brand with world-class customer service. You own everything — code, hosting, and full control.',
     siteName: 'Powers Creative Co.',
     images: [
       {
@@ -60,7 +60,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Powers Creative Co. — Custom Websites for Your Brand',
     description:
-      'Custom websites that represent your brand with world-class customer service. CMS dashboard included.',
+      'Custom websites that represent your brand with world-class customer service. You own everything.',
     images: ['/images/og-image.png'],
   },
   robots: {
@@ -93,7 +93,7 @@ const jsonLd = {
         'React',
         'Tailwind CSS',
         'SEO',
-        'Sanity CMS',
+        'Custom Development',
       ],
       sameAs: [],
     },

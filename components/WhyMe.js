@@ -28,11 +28,11 @@ const differentiators = [
   {
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
       </svg>
     ),
-    title: 'You Control Your Content',
-    description: 'Every client gets a CMS dashboard. Update your text, images, and pages yourself — no developer needed for day-to-day changes.',
+    title: 'You Own Everything',
+    description: 'Your code, your hosting, your domain. No vendor lock-in, no monthly platform fees. When we\'re done, you have full ownership and control.',
     accent: 'text-emerald-400 bg-emerald-400/10',
   },
   {

@@ -34,10 +34,10 @@ const services = [
     ),
     title: 'Business Websites',
     price: '$380+',
-    description: 'A complete web presence for your business. Multiple pages, CMS dashboard, and everything you need to look professional.',
+    description: 'A complete web presence for your business. Multiple pages, professional design, and everything you need to look credible.',
     features: [
       'Up to 5 pages',
-      'CMS dashboard — edit your own content',
+      'You own everything — code & hosting',
       'Contact forms, SEO, analytics',
       '4–5 day delivery',
       'Unlimited revisions',
@@ -58,7 +58,7 @@ const services = [
     description: 'Custom-built applications with advanced functionality. Lead gen funnels, dashboards, e-commerce — if you can dream it, I can build it.',
     features: [
       'Custom functionality & logic',
-      'Full CMS integration',
+      'Full ownership of code',
       'E-commerce capable',
       '7–10 day delivery',
       '1 month ongoing support included',

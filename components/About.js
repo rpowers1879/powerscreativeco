@@ -49,7 +49,7 @@ export default function About() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-400">Stack</p>
-                    <p className="text-sm font-semibold text-white">Next.js · Tailwind · Sanity</p>
+                    <p className="text-sm font-semibold text-white">Next.js · Tailwind · React</p>
                   </div>
                 </div>
               </motion.div>
@@ -82,14 +82,14 @@ export default function About() {
                 </p>
                 <p>
                   I use <span className="text-white font-medium">Next.js</span>,{' '}
-                  <span className="text-white font-medium">Tailwind CSS</span>, and{' '}
-                  <span className="text-white font-medium">Sanity CMS</span> — the same tools
+                  <span className="text-white font-medium">React</span>, and{' '}
+                  <span className="text-white font-medium">Tailwind CSS</span> — the same tools
                   used by companies like Nike, Figma, and Twitch. No WordPress bloat. No page
                   builders. Just clean, fast code that Google loves.
                 </p>
                 <p>
-                  Every client gets their own <span className="text-white font-medium">CMS dashboard</span> to
-                  update text, images, and content — no developer needed for day-to-day changes.
+                  When I build your site, <span className="text-white font-medium">you own everything</span> —
+                  the code, the hosting, the domain. No vendor lock-in, no monthly platform fees.
                   I&apos;m here to partner with you, not disappear after launch. Your success is my success.
                 </p>
               </div>

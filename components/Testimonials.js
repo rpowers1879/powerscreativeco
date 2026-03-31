@@ -9,7 +9,7 @@ const testimonials = [
     _id: '1',
     clientName: 'Marcus T.',
     businessName: "The Master's Tree Service LLC",
-    quote: "Powers Creative built our entire website in two days. Two days! It looks incredible, loads fast, and we've already gotten calls from people who found us on Google. The CMS dashboard is a game-changer — I can update our services and photos myself without bugging anyone.",
+    quote: "Powers Creative built our entire website in two days. Two days! It looks incredible, loads fast, and we've already gotten calls from people who found us on Google. Best part? We own everything — the code, the hosting, no monthly platform fees.",
     rating: 5,
   },
   {

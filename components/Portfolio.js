@@ -11,7 +11,7 @@ const getScreenshotUrl = (url) => {
   return `https://image.thum.io/get/width/800/crop/600/${encodeURIComponent(url)}`;
 };
 
-// Placeholder data — replaced by Sanity CMS in production
+// Portfolio projects
 const fallbackProjects = [
   {
     _id: '1',

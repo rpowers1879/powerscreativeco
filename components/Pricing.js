@@ -14,7 +14,7 @@ const tiers = [
     popular: false,
     features: {
       pages: '1',
-      cms: false,
+      ownership: true,
       contactForm: true,
       seo: 'Basic',
       analytics: false,
@@ -27,11 +27,11 @@ const tiers = [
     name: 'Business',
     price: '$380',
     suffix: '+',
-    description: 'A complete web presence with CMS — the sweet spot for most businesses.',
+    description: 'A complete web presence — the sweet spot for most businesses.',
     popular: true,
     features: {
       pages: 'Up to 5',
-      cms: true,
+      ownership: true,
       contactForm: true,
       seo: 'Full',
       analytics: true,
@@ -48,7 +48,7 @@ const tiers = [
     popular: false,
     features: {
       pages: 'Up to 10',
-      cms: true,
+      ownership: true,
       contactForm: true,
       seo: 'Full',
       analytics: true,
@@ -61,7 +61,7 @@ const tiers = [
 
 const featureLabels = [
   { key: 'pages', label: 'Pages' },
-  { key: 'cms', label: 'CMS Dashboard' },
+  { key: 'ownership', label: 'Full Ownership' },
   { key: 'contactForm', label: 'Contact Form' },
   { key: 'seo', label: 'SEO Setup' },
   { key: 'analytics', label: 'Analytics' },

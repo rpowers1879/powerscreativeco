@@ -14,16 +14,16 @@ const testimonials = [
   },
   {
     _id: '2',
-    clientName: 'David L.',
-    businessName: 'Oak Harbor Finance',
-    quote: "I needed a professional site for my insurance business that would build trust with potential clients. Powers Creative delivered something that looks like a Fortune 500 company built it. The eligibility funnel he created converts incredibly well. Best investment I've made in my business.",
+    clientName: 'Sarah K.',
+    businessName: 'RoofProMatch',
+    quote: "We needed a lead generation platform built fast and built right. Powers Creative understood exactly what we needed and the multi-step form they created is smooth, professional, and converts like crazy. They're our go-to developer now.",
     rating: 5,
   },
   {
     _id: '3',
-    clientName: 'Sarah K.',
-    businessName: 'RoofProMatch',
-    quote: "We needed a lead generation platform built fast and built right. Powers Creative understood exactly what we needed and the multi-step form they created is smooth, professional, and converts like crazy. They're our go-to developer now.",
+    clientName: 'Jason M.',
+    businessName: 'Ruff Lyfe Pet Services',
+    quote: "I wanted something that felt like a real app, not just a website. Powers Creative delivered a slick PWA that my customers can install right to their phones. It's been a game-changer for bookings.",
     rating: 5,
   },
 ];

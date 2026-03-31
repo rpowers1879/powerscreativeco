@@ -5,13 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SectionHeading from './ui/SectionHeading';
 import Button from './ui/Button';
 
-// Generate screenshot URL from live site URL
-const getScreenshotUrl = (url) => {
-  return `https://image.thum.io/get/width/800/crop/600/noanimate/${url}`;
-};
-
 // Portfolio projects
-const fallbackProjects = [
+const projects = [
   {
     _id: '1',
     title: "The Master's Tree Service LLC",
@@ -19,7 +14,7 @@ const fallbackProjects = [
     category: 'business',
     tags: ['Next.js', 'Small Business', 'SEO'],
     liveUrl: 'https://masters-tree-service.vercel.app',
-    featured: true,
+    image: '/images/portfolio/masters-tree.png',
   },
   {
     _id: '2',
@@ -28,7 +23,7 @@ const fallbackProjects = [
     category: 'business',
     tags: ['Next.js', 'Finance', 'Lead Gen'],
     liveUrl: 'https://oakharborfinance.com',
-    featured: true,
+    image: '/images/portfolio/oak-harbor.png',
   },
   {
     _id: '3',
@@ -37,7 +32,7 @@ const fallbackProjects = [
     category: 'webapp',
     tags: ['Next.js', 'Lead Gen', 'Multi-Step Form'],
     liveUrl: 'https://roofpromatch.vercel.app',
-    featured: true,
+    image: '/images/portfolio/roofpromatch.png',
   },
   {
     _id: '4',
@@ -46,7 +41,7 @@ const fallbackProjects = [
     category: 'webapp',
     tags: ['Next.js', 'Lead Gen', 'Solar'],
     liveUrl: 'https://solarpromatch.vercel.app',
-    featured: true,
+    image: '/images/portfolio/solarpromatch.png',
   },
   {
     _id: '5',
@@ -55,7 +50,7 @@ const fallbackProjects = [
     category: 'business',
     tags: ['Next.js', 'Finance', 'Insurance'],
     liveUrl: 'https://arete-wealth-protection.vercel.app',
-    featured: true,
+    image: '/images/portfolio/arete-wealth.png',
   },
   {
     _id: '6',
@@ -64,7 +59,7 @@ const fallbackProjects = [
     category: 'webapp',
     tags: ['Next.js', 'Insurance', 'Funnel'],
     liveUrl: 'https://missouri-mortgage-protection.vercel.app/eligibility',
-    featured: true,
+    image: '/images/portfolio/missouri-mortgage.png',
   },
   {
     _id: '7',
@@ -73,7 +68,7 @@ const fallbackProjects = [
     category: 'webapp',
     tags: ['Next.js', 'PWA', 'Small Business'],
     liveUrl: 'https://ruff-lyfe.vercel.app',
-    featured: true,
+    image: '/images/portfolio/ruff-lyfe.png',
   },
 ];
 
@@ -95,8 +90,7 @@ const tagColors = {
 
 export default function Portfolio() {
   const [filter, setFilter] = useState('all');
-  const items = fallbackProjects;
-  const filtered = filter === 'all' ? items : items.filter((p) => p.category === filter);
+  const filtered = filter === 'all' ? projects : projects.filter((p) => p.category === filter);
 
   return (
     <section id="portfolio" className="section-padding relative">
@@ -147,7 +141,7 @@ export default function Portfolio() {
                     {/* Live screenshot from project URL */}
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={getScreenshotUrl(project.liveUrl)}
+                      src={project.image}
                       alt={`Screenshot of ${project.title}`}
                       className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"

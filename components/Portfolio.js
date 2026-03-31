@@ -9,12 +9,12 @@ import Button from './ui/Button';
 const projects = [
   {
     _id: '1',
-    title: "The Master's Tree Service LLC",
-    description: 'Full business website for a North Georgia tree care and landscaping company. Services, gallery, testimonials, and lead generation.',
+    title: 'Be The Answer',
+    description: 'AI search optimization service helping businesses get recommended by ChatGPT, Google AI, and Perplexity. Audits, optimization, and monitoring.',
     category: 'business',
-    tags: ['Next.js', 'Small Business', 'SEO'],
-    liveUrl: 'https://masters-tree-service.vercel.app',
-    image: '/images/portfolio/masters-tree.png',
+    tags: ['Next.js', 'AI', 'SaaS'],
+    liveUrl: 'https://betheanswer.cloud',
+    image: '/images/portfolio/be-the-answer.png',
   },
   {
     _id: '2',

@@ -7,9 +7,9 @@ import Reveal from './ui/Reveal';
 const testimonials = [
   {
     _id: '1',
-    clientName: 'Marcus T.',
-    businessName: "The Master's Tree Service LLC",
-    quote: "Powers Creative built our entire website in two days. Two days! It looks incredible, loads fast, and we've already gotten calls from people who found us on Google. Best part? We own everything — the code, the hosting, no monthly platform fees.",
+    clientName: 'Robert G.',
+    businessName: 'Arete Wealth & Protection',
+    quote: "Powers Creative built the questionnaire in no time and had the entire project delivered ahead of schedule. The quality exceeded my expectations and the process was seamless from start to finish.",
     rating: 5,
   },
   {
@@ -21,9 +21,9 @@ const testimonials = [
   },
   {
     _id: '3',
-    clientName: 'Jason M.',
-    businessName: 'Ruff Lyfe Pet Services',
-    quote: "I wanted something that felt like a real app, not just a website. Powers Creative delivered a slick PWA that my customers can install right to their phones. It's been a game-changer for bookings.",
+    clientName: 'Mike D.',
+    businessName: 'Be The Answer',
+    quote: "Professional, fast, and exactly what we needed. Powers Creative took our vision and turned it into a polished website that represents our brand perfectly. Highly recommend.",
     rating: 5,
   },
 ];

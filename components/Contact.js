@@ -7,9 +7,9 @@ import Reveal from './ui/Reveal';
 
 const serviceOptions = [
   { value: '', label: 'Select a service...' },
-  { value: 'starter', label: 'Starter — Landing Page ($80+)' },
-  { value: 'business', label: 'Business — Multi-Page Website ($380+)' },
-  { value: 'premium', label: 'Premium — Web Application ($750+)' },
+  { value: 'basic', label: 'Basic — Landing Page ($100+)' },
+  { value: 'business', label: 'Business — Multi-Page Website ($450+)' },
+  { value: 'premium', label: 'Premium — Web Application ($800+)' },
   { value: 'other', label: 'Something else / Not sure' },
 ];
 

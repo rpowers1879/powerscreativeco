@@ -107,7 +107,7 @@ const jsonLd = {
       name: 'Powers Creative Co.',
       description:
         'Custom websites that help business owners represent their brand and style.',
-      priceRange: '$80 - $750+',
+      priceRange: '$100 - $800+',
       areaServed: 'Worldwide',
       serviceType: 'Web Development',
     },

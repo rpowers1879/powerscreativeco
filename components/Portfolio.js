@@ -2,13 +2,12 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import SectionHeading from './ui/SectionHeading';
 import Button from './ui/Button';
 
 // Generate screenshot URL from live site URL
 const getScreenshotUrl = (url) => {
-  return `https://image.thum.io/get/width/800/crop/600/${encodeURIComponent(url)}`;
+  return `https://image.thum.io/get/width/800/crop/600/noanimate/${url}`;
 };
 
 // Portfolio projects
@@ -146,12 +145,12 @@ export default function Portfolio() {
                   {/* Thumbnail area */}
                   <div className="relative h-48 bg-gradient-to-br from-surface-800 to-surface-700 overflow-hidden">
                     {/* Live screenshot from project URL */}
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={getScreenshotUrl(project.liveUrl)}
                       alt={`Screenshot of ${project.title}`}
-                      fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
                     />
                     {/* Hover overlay */}
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-400 flex items-center justify-center">

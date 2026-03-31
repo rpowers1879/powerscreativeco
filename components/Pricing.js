@@ -7,8 +7,8 @@ import Button from './ui/Button';
 
 const tiers = [
   {
-    name: 'Starter',
-    price: '$80',
+    name: 'Basic',
+    price: '$100',
     suffix: '+',
     description: 'A single high-converting page for launches, products, or events.',
     popular: false,
@@ -25,12 +25,12 @@ const tiers = [
   },
   {
     name: 'Business',
-    price: '$380',
+    price: '$450',
     suffix: '+',
     description: 'A complete web presence — the sweet spot for most businesses.',
     popular: true,
     features: {
-      pages: 'Up to 5',
+      pages: 'Up to 3',
       ownership: true,
       contactForm: true,
       seo: 'Full',
@@ -42,12 +42,12 @@ const tiers = [
   },
   {
     name: 'Premium',
-    price: '$750',
+    price: '$800',
     suffix: '+',
     description: 'Custom web applications with advanced functionality and ongoing support.',
     popular: false,
     features: {
-      pages: 'Up to 10',
+      pages: 'Up to 5',
       ownership: true,
       contactForm: true,
       seo: 'Full',
@@ -227,7 +227,7 @@ export default function Pricing() {
         <Reveal>
           <div className="mt-12 text-center">
             <p className="text-gray-400">
-              Every project is unique.{' '}
+              Need something custom? Complex projects are quoted on a per-job basis.{' '}
               <a
                 href="#contact"
                 className="text-brand-400 hover:text-brand-300 underline underline-offset-4 decoration-brand-400/30 hover:decoration-brand-300/50 transition-colors"

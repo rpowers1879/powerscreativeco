@@ -13,7 +13,7 @@ const services = [
       </svg>
     ),
     title: 'Landing Pages',
-    price: '$80+',
+    price: '$100+',
     description: 'Perfect for product launches, events, and lead generation. One page that converts visitors into customers.',
     features: [
       'Custom design, mobile responsive',
@@ -33,10 +33,10 @@ const services = [
       </svg>
     ),
     title: 'Business Websites',
-    price: '$380+',
+    price: '$450+',
     description: 'A complete web presence for your business. Multiple pages, professional design, and everything you need to look credible.',
     features: [
-      'Up to 5 pages',
+      'Up to 3 pages',
       'You own everything — code & hosting',
       'Contact forms, SEO, analytics',
       '4–5 day delivery',
@@ -54,7 +54,7 @@ const services = [
       </svg>
     ),
     title: 'Web Applications',
-    price: '$750+',
+    price: '$800+',
     description: 'Custom-built applications with advanced functionality. Lead gen funnels, dashboards, e-commerce — if you can dream it, I can build it.',
     features: [
       'Custom functionality & logic',

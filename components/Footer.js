@@ -99,10 +99,10 @@ export default function Footer() {
               ))}
             </div>
             <a
-              href="mailto:rpowers1879@outlook.com"
+              href="mailto:russell@powerscreative.co"
               className="block mt-4 text-sm text-gray-500 hover:text-white transition-colors"
             >
-              rpowers1879@outlook.com
+              russell@powerscreative.co
             </a>
           </div>
         </div>

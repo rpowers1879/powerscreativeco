@@ -85,7 +85,7 @@ const jsonLd = {
       name: 'Powers Creative Co.',
       description:
         'Custom websites that help business owners represent their brand and style with world-class customer service.',
-      email: 'rpowers1879@outlook.com',
+      email: 'russell@powerscreative.co',
       url: process.env.NEXT_PUBLIC_SITE_URL || 'https://powerscreative.co',
       knowsAbout: [
         'Web Development',

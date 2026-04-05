@@ -38,7 +38,7 @@ export async function POST(request) {
     // Send email via Resend
     await resend.emails.send({
       from: 'Powers Creative Co. <onboarding@resend.dev>',
-      to: process.env.CONTACT_EMAIL_TO || 'rpowers1879@outlook.com',
+      to: process.env.CONTACT_EMAIL_TO || 'russell@powerscreative.co',
       subject: `New Inquiry from ${name}${business ? ` (${business})` : ''}`,
       html: `
         <div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto;">

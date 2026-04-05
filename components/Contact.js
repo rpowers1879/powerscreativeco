@@ -216,7 +216,7 @@ export default function Contact() {
 
                   {status === 'error' && (
                     <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 text-sm">
-                      Something went wrong. Please try again or email me directly at rpowers1879@outlook.com.
+                      Something went wrong. Please try again or email me directly at russell@powerscreative.co.
                     </div>
                   )}
 
@@ -261,7 +261,7 @@ export default function Contact() {
 
                 <div className="space-y-4">
                   <a
-                    href="mailto:rpowers1879@outlook.com"
+                    href="mailto:russell@powerscreative.co"
                     className="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center group-hover:bg-brand-500/10 group-hover:border-brand-500/20 transition-colors">
@@ -269,7 +269,7 @@ export default function Contact() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                       </svg>
                     </div>
-                    rpowers1879@outlook.com
+                    russell@powerscreative.co
                   </a>
                 </div>
               </div>

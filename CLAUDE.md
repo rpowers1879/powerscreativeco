@@ -1,5 +1,13 @@
 # CLAUDE.md — Powers Creative Co. Portfolio
 
+## Style Preferences
+
+When writing code, comments, or copy for this project:
+- Use contractions (it's, don't, you'll)
+- No emojis
+- Natural, professional tone
+- Keep comments brief and only where logic isn't self-evident
+
 ## Project Overview
 
 This is the portfolio website for Powers Creative Co., a freelance web development business owned by Russell Powers. It showcases his work, services, and pricing to convert Fiverr/Upwork traffic into paying clients. The site emphasizes fast delivery, modern tech, and full ownership (no vendor lock-in).
@@ -19,17 +27,17 @@ This is the portfolio website for Powers Creative Co., a freelance web developme
 **Animation:**
 - Framer Motion 11
 
-**Email:**
-- Resend API for contact form submissions
-
-**CMS (legacy, not currently used):**
-- Sanity 3.40 is installed but the site uses hardcoded data
-- Sanity Studio accessible at `/studio` but not actively used
-- lib/sanity.js and sanity/schemas/ exist but aren't imported by main page
+**Email/Forms:**
+- Resend API for contact form submissions (current)
+- Web3Forms is also in the toolkit for client projects
 
 **Deployment:**
-- Vercel
+- Vercel hosting
 - Domain: powerscreative.co
+- Client sites use GoDaddy DNS handoff to Vercel
+
+**Sanity CMS (installed but unused):**
+Sanity 3.40 is installed but this site uses hardcoded data. Don't import from `lib/sanity.js` or modify `sanity/schemas/` unless explicitly asked to activate CMS functionality. The `/studio` route exists but isn't needed.
 
 ## File Structure
 
@@ -37,7 +45,7 @@ This is the portfolio website for Powers Creative Co., a freelance web developme
 portfolio/
 ├── app/
 │   ├── api/contact/route.js    # POST endpoint for contact form
-│   ├── studio/[[...index]]/    # Sanity Studio (not actively used)
+│   ├── studio/[[...index]]/    # Sanity Studio (unused)
 │   ├── globals.css             # Tailwind + custom utilities
 │   ├── layout.js               # Root layout, metadata, JSON-LD
 │   └── page.js                 # Homepage (imports all sections)
@@ -58,13 +66,13 @@ portfolio/
 │   ├── Contact.js
 │   └── Footer.js
 ├── lib/
-│   └── sanity.js               # Sanity client (not actively used)
+│   └── sanity.js               # Sanity client (unused)
 ├── public/
 │   └── images/
 │       ├── headshot.png        # Russell's photo
-│       ├── og-image.png        # Social share image
+│       ├── og-image.png        # Social share image (1200x630)
 │       └── portfolio/          # Static screenshots for each project
-├── sanity/                     # Sanity schemas (not actively used)
+├── sanity/                     # Sanity schemas (unused)
 ├── .env.local                  # Environment variables (not in git)
 ├── next.config.js
 ├── tailwind.config.js
@@ -77,6 +85,22 @@ portfolio/
 - UI primitives go in `components/ui/`
 - Page sections are flat in `components/`
 - Portfolio screenshots: kebab-case in `public/images/portfolio/` (e.g., `oak-harbor.png`)
+
+## Image Handling
+
+**Portfolio screenshots:**
+- Location: `public/images/portfolio/`
+- Format: PNG preferred, WebP acceptable
+- Dimensions: 1200x800 or similar 3:2 aspect ratio
+- Naming: kebab-case matching project name (e.g., `be-the-answer.png`)
+
+**OG/Social image:**
+- Location: `public/images/og-image.png`
+- Dimensions: 1200x630 (standard OG size)
+
+**Headshot:**
+- Location: `public/images/headshot.png`
+- Keep square aspect ratio
 
 ## Code Patterns
 
@@ -99,9 +123,8 @@ export default function SectionName() {
           title="Title"
           description="Description text."
         />
-        {/* Content wrapped in Reveal for scroll animations */}
         <Reveal delay={0.1}>
-          {/* ... */}
+          {/* Content here */}
         </Reveal>
       </div>
     </section>
@@ -129,13 +152,23 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 ## Things to Never Modify Without Asking
 
-- `.env.local` — Contains API keys (RESEND_API_KEY)
+- `.env.local` — Contains API keys
 - `vercel.json` — Deployment config
 - `next.config.js` — Image remote patterns
 - `app/layout.js` metadata — SEO/OG tags, JSON-LD schema
 - Pricing values — Located in multiple files (Pricing.js, Services.js, Contact.js, layout.js)
 - Email addresses — Also in multiple files
 - Portfolio/testimonial data — Client-specific content
+
+## Git Workflow
+
+**This is a solo project. Commit directly to main.**
+
+Don't create feature branches unless explicitly asked. Push to `main` on GitHub (rpowers1879/powerscreativeco) and Vercel auto-deploys.
+
+```bash
+git add . && git commit -m "Your message" && git push
+```
 
 ## Build and Deployment
 
@@ -154,16 +187,18 @@ npm run build
 npm run lint
 ```
 
-**Deploy:**
-Push to `main` branch on GitHub (rpowers1879/powerscreativeco) — Vercel auto-deploys.
+**Performance target:** Keep Lighthouse performance score above 90.
 
 **Environment variables needed in Vercel:**
-- `NEXT_PUBLIC_SANITY_PROJECT_ID` = f6v1xxe3
-- `NEXT_PUBLIC_SANITY_DATASET` = production
-- `NEXT_PUBLIC_SANITY_API_VERSION` = 2024-01-01
-- `RESEND_API_KEY` = (keep secret)
-- `CONTACT_EMAIL_TO` = russell@powerscreative.co
-- `NEXT_PUBLIC_SITE_URL` = https://powerscreative.co
+- `NEXT_PUBLIC_SANITY_PROJECT_ID` — Sanity project ID
+- `NEXT_PUBLIC_SANITY_DATASET` — production
+- `NEXT_PUBLIC_SANITY_API_VERSION` — 2024-01-01
+- `RESEND_API_KEY` — (keep secret)
+- `CONTACT_EMAIL_TO` — russell@powerscreative.co
+- `NEXT_PUBLIC_SITE_URL` — https://powerscreative.co
+
+**Client Site Deployment Pattern:**
+For client sites built from this stack, the workflow is Vercel hosting with GoDaddy DNS handoff. Point the client's GoDaddy domain to Vercel's nameservers or add the required DNS records.
 
 ## Project-Specific Rules
 
@@ -192,9 +227,5 @@ Push to `main` branch on GitHub (rpowers1879/powerscreativeco) — Vercel auto-d
 - SEO metadata and JSON-LD
 - OG image for social sharing
 - Deployed and live at powerscreative.co
-
-**Not actively used:**
-- Sanity CMS — schemas exist but data is hardcoded
-- Sanity Studio at `/studio` — accessible but not needed
 
 **No TODOs/FIXMEs in codebase.**
